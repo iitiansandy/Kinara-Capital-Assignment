@@ -42,7 +42,7 @@ const addStudent = async (req, res) => {
 // GET STUDENTS
 const getStudents = async (req, res) => {
     try {
-        let { pageNumber, count } = req.params;
+        let { pageNumber, count } = req.query;
         if (!pageNumber || !count) {
             return res.status(400).send({ status: false, message: "Page number and count are required" });
         }
@@ -76,7 +76,7 @@ const getStudents = async (req, res) => {
 // SEARCH STUDENTS BY FILTER
 const searchStudent = async (req, res) => {
     try {
-        let { query } = req.body;
+        let { query } = req.query;
 
         const filter = {
             $or: [{ name: { $regex: query, $options: "i" } }, 
