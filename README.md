@@ -1,0 +1,8 @@
+<h1>Kinara Capital SDE Home Assignment</h1> </br>
+<h2>Objective</h2> </br>
+The objective of this assignment is to develop a grid system with filtering functionality in the backend. The grid system is designed to display student details (such as ID, name, total marks, etc.)
+and allow filtering based on various columns. The assignment involves developing backend APIs responsible for loading student details with pagination and implementing server-side filtering.
+
+<h2>Requirements</h2>
+<h3>Load Student Details API:</h3> Implement an API that retrieves student details from a file (CSV/JSON/any other format) and returns the data in a paginated manner. The API should accept parameters such as page number and page size to allow pagination.
+<h3>Server-side Filtering API:</h3> Implement server-side filtering functionality in the backend. The filtering mechanism should allow the UI to send filter criteria to the backend API, which will then return the filtered results to the UI.
